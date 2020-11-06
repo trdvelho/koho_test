@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      KOHO CHALLENGE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="title">Output list from loaded input</div>
+
+    <!-- List of output result in real-time -->
+    <ion-list>
+      <ion-item  *ngFor="let load of outPut">
+        <div class="load-content">
+          <div class="load-id-customer-detail">
+            <ion-avatar>{{ load.id }}</ion-avatar>
+            <div class="load-details">
+              <div class="customer-id">
+                <ion-icon name="person-sharp"></ion-icon>
+                ID: {{ load.customer_id }}</div>
+            </div>
+          </div>
+          
+          <ion-icon *ngIf="load.accepted" class="accepted" name="checkmark-outline"></ion-icon>
+          <ion-icon *ngIf="!load.accepted" class="refused" name="close-outline"></ion-icon>
+        </div>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>

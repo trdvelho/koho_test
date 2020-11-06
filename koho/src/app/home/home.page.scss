@@ -1,0 +1,45 @@
+ion-title {
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  padding: 20px;
+}
+.load-content, .load-id-customer-detail, ion-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load-content {
+  width: 100%;
+  
+  ion-icon {
+    width: 15px;
+    height: 15px;
+    color: #2E5CA9
+  }
+  ion-avatar {
+    font-weight: 600;
+    justify-content: center;
+    border-radius:  40px;
+    padding: 2px;
+    margin: 10px;
+    width: 80px;
+    background-color: #f99d8b;
+    color: white
+  }
+
+  .accepted, .refused { 
+    width: 30px;
+    height: 30px;
+  }
+  .accepted {
+    color: green;
+  }
+
+  .refused {
+    color: red
+  }
+}

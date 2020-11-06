@@ -1,0 +1,7 @@
+{
+  "name": "koho",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
